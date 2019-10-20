@@ -22,6 +22,8 @@
     <h1>Welcome to the Request Form</h1>
 
     <form method="post" asp-action="ListingForm" style="width: 600px;">
+
+        <div asp-validation-summary="All"></div>
         <div class="form-group">
             <label asp-for="Name">Name:</label>
             <input asp-for="Name" class="form-control" />

@@ -32,9 +32,9 @@ namespace PartyInvites.Controllers
             return View(Repository.GetEquipmentListings());
         }
 
-        public IActionResult RequestForm() {
-            return View();
-        }
+        // public IActionResult RequestForm() {
+        //     return View();
+        // }
 
         public IActionResult Requests() {
             return View(Repository.Listings);
@@ -74,13 +74,29 @@ namespace PartyInvites.Controllers
         }
 
 
+        [HttpGet]
+        public ViewResult RequestForm() {
+            return View();
+        }
+
+
         [HttpPost]
-        public ViewResult ListingForm(Listing listing) {
+        public ViewResult RequestForm(Listing listing) {
             // TODO: store response from guest
 
-            Repository.AddListing(listing);
 
-            return View("Confirmation");
+            if (ModelState.IsValid) {
+                Repository.AddListing(listing);
+                return View("Confirmation");
+            } else {
+                // there is a validation error
+                return View();
+            }
+
+
+            // Repository.AddListing(listing);
+
+            // return View("Confirmation");
 
             // return View("AllEquipment"); 
             // return View("Thanks", listing);
