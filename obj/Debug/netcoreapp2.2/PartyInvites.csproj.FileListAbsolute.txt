@@ -34,3 +34,5 @@
 /Users/billygoat/Documents/DotNet/PartyInvites/obj/Debug/netcoreapp2.2/Razor/Views/Home/RequestForm.g.cshtml.cs
 /Users/billygoat/Documents/DotNet/PartyInvites/obj/Debug/netcoreapp2.2/Razor/Views/Home/Confirmation.g.cshtml.cs
 /Users/billygoat/Documents/DotNet/PartyInvites/obj/Debug/netcoreapp2.2/Razor/Views/Home/Requests.g.cshtml.cs
+/Users/billygoat/Documents/DotNet/PartyInvites/obj/Debug/netcoreapp2.2/Razor/Views/Home/ListingNotFound.g.cshtml.cs
+/Users/billygoat/Documents/DotNet/PartyInvites/obj/Debug/netcoreapp2.2/Razor/Views/Home/RequestDetails.g.cshtml.cs

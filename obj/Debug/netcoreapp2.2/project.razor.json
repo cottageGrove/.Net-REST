@@ -2986,6 +2986,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Home/ListingNotFound.cshtml",
+      "TargetPath": "Views/Home/ListingNotFound.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Shared/_CookieConsentPartial.cshtml",
       "TargetPath": "Views/Shared/_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
@@ -3028,6 +3033,11 @@
     {
       "FilePath": "Views/Home/AllEquipment.cshtml",
       "TargetPath": "Views/Home/AllEquipment.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Home/RequestDetails.cshtml",
+      "TargetPath": "Views/Home/RequestDetails.cshtml",
       "FileKind": "mvc"
     }
   ],

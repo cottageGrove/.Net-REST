@@ -10,6 +10,8 @@ namespace PartyInvites.Controllers
 {
     public class HomeController : Controller
     {
+
+        public static int id = 0;
         public IActionResult Index()
         {
             return View();
@@ -51,6 +53,18 @@ namespace PartyInvites.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult RequestDetails(int id)
+        {
+
+            var listing = Repository.Listings.SingleOrDefault(li => li.Id == id);
+
+            if (listing == null)
+            {
+                return View("ListingNotFound");
+            }
+            return View(listing);
         }
 
 
