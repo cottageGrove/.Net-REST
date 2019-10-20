@@ -1,9 +1,10 @@
-@model IEnumerable<Listing> 
+@model IEnumerable<Equipment>
 
 @{
     Layout = "_BasicLayout";
     ViewData["Title"] = "Home Page";
 }
+
 
 <!DOCTYPE html>
 <html>
@@ -12,31 +13,41 @@
     <title>Controllers and Actions</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
 </head>
+
 <body>
-    <h1>List of All Equipment</h1>
-    <!-- <table>
+
+
+    <h1>Welcome to the Available Equipment Page</h1>
+    <h2>List of All Equipment</h1>
+    <table>
         <thead>
             <tr>
+                <th>Id</th>
                 <th>Name</th>
-                <th>Phone</th>
-                <th>Email</th>
-                <th>Role</th>
-                <th>Equipment</th>
+                <th>Description</th>
+                <th>Availability</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var listing in Model) {
+            @foreach (var equipment in Model) {
                 <tr>
-                    <td>@listing.Name</td>
-                    <td>@listing.Phone</td>
-                    <td>@listing.Email</td>
-                    <td>@listing.Role</td>
-                    <td>@listing.Equipment</td>
+                    <td>@equipment.Id</td>
+                    <td>@equipment.Name</td>
+                    <td>@equipment.Description</td>
+
+                    @if (equipment.Availability == true) {
+                        <td>
+                            <div style="color: green;"> Available </div>
+                        </td>
+
+                    } else {
+                        <td>
+                            <div style="color: red;"> Unavailable</div>
+                        </td>
+                    }
                 </tr>
             }
 
         </tbody>
-    </table> -->
-
+    </table>
 </body>
-</html>

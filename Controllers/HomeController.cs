@@ -19,11 +19,11 @@ namespace PartyInvites.Controllers
 
         public IActionResult AvailableEquipment() 
         {
-            return View();
+            return View(Repository.GetEquipmentListings());
         }
 
         public IActionResult AllEquipment() {
-            return View();
+            return View(Repository.GetEquipmentListings());
         }
 
         public IActionResult RequestForm() {
