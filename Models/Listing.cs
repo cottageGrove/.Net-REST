@@ -13,6 +13,10 @@ namespace PartyInvites.Models
 
         public string Equipment { get; set; }
 
+        public string RequestDetails { get; set; }
+
+        public string Duration { get; set; }
+
 
     }
 }

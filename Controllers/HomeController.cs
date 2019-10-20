@@ -19,7 +19,13 @@ namespace PartyInvites.Controllers
 
         public IActionResult AvailableEquipment() 
         {
-            return View(Repository.GetEquipmentListings());
+
+            var availableEquipment = from e in Repository.GetEquipmentListings()
+                                        where e.Availability == true
+                                        orderby e.Id ascending 
+                                        select(e);
+
+            return View(availableEquipment);
         }
 
         public IActionResult AllEquipment() {

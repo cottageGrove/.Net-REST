@@ -20,7 +20,8 @@
 </head>
 <body class="m-1 p-1">
     <h1>Welcome to the Request Form</h1>
-    <form method="post" asp-action="ListingForm">
+
+    <form method="post" asp-action="ListingForm" style="width: 600px;">
         <div class="form-group">
             <label asp-for="Name">Name:</label>
             <input asp-for="Name" class="form-control" />
@@ -49,6 +50,22 @@
                 <option value="other">Other</option>
             </select>
         </div>
+
+        <div class="form-group">
+            <label asp-for="RequestDetails">Request Details:</label>
+            <input asp-for="RequestDetails" class="form-control"/>
+        </div>
+
+        <div>
+            <label asp-for="Duration">Duration:</label>
+            <select asp-for="Duration" class="form-control">
+                <option value="One Week">One Week</option>
+                <option value="Two Weeks">Two Weeks</option>
+                <option value="One Month">One Month</option>
+                <option value="Longer than one month">Longer than one month</option>
+            </select>
+        </div>
+ 
         <button class="btn btn-primary center-block spacing" type="submit">Submit</button>
     </form>
 </body>

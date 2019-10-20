@@ -14,15 +14,17 @@
 </head>
 <body>
     <h1>List of All Equipment</h1>
-    <table>
+    <table class="table">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Phone</th>
-                <th>Email</th>
-                <th>Role</th>
-                <th>Equipment</th>
-                <th>Details</th>
+                <th scope="col">Name</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Email</th>
+                <th scope="col">Role</th>
+                <th scope="col">Equipment</th>
+                <th scope="col">Request Details</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Details</th>
             </tr>
         </thead>
         <tbody>
@@ -33,6 +35,8 @@
                     <td>@listing.Email</td>
                     <td>@listing.Role</td>
                     <td>@listing.Equipment</td>
+                    <td>@listing.RequestDetails</td>
+                    <td>@listing.Duration</td>
                     <td>
                         <a href="/Home/RequestDetails/@listing.Id">Details</a>
                     </td>
