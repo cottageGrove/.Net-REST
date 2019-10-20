@@ -22,3 +22,5 @@ namespace PartyInvites
                 .UseStartup<Startup>();
     }
 }
+
+

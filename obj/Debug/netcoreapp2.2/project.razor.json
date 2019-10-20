@@ -2961,6 +2961,26 @@
   "RootNamespace": "PartyInvites",
   "Documents": [
     {
+      "FilePath": "Views/Home/RequestForm.cshtml",
+      "TargetPath": "Views/Home/RequestForm.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Home/Requests.cshtml",
+      "TargetPath": "Views/Home/Requests.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Home/Confirmation.cshtml",
+      "TargetPath": "Views/Home/Confirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Shared/_BasicLayout.cshtml",
+      "TargetPath": "Views/Shared/_BasicLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Home/Privacy.cshtml",
       "TargetPath": "Views/Home/Privacy.cshtml",
       "FileKind": "mvc"
@@ -2996,8 +3016,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Views/Home/AvailableEquipment.cshtml",
+      "TargetPath": "Views/Home/AvailableEquipment.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Views/Shared/_Layout.cshtml",
       "TargetPath": "Views/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Home/AllEquipment.cshtml",
+      "TargetPath": "Views/Home/AllEquipment.cshtml",
       "FileKind": "mvc"
     }
   ],

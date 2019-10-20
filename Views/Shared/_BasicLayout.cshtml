@@ -1,0 +1,30 @@
+<head>
+    <meta name="viewport">
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="/css/Style.css" />
+
+    <style>
+        #mainDiv {
+            margin-top: 40px;
+            font-size: 16pt;
+            width: 400px;
+            padding-left: 30px; 
+        }
+        .spacing {
+            margin-top: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <a href="/Home">Home</a> | <a href="/Home/AllEquipment">All Equipment Listing</a> |  <a href="/Home/AvailableEquipment">Available Equipment</a>  |  
+        <a href="/Home/RequestForm">Request Form</a> 
+    </div>
+    <div id="mainDiv">
+        @RenderBody()
+    </div>
+    <script src="/js/script.js"></script>
+</body>

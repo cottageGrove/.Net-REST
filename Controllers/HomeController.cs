@@ -15,6 +15,23 @@ namespace PartyInvites.Controllers
             return View();
         }
 
+        public IActionResult AvailableEquipment() 
+        {
+            return View();
+        }
+
+        public IActionResult AllEquipment() {
+            return View();
+        }
+
+        public IActionResult RequestForm() {
+            return View();
+        }
+
+        public IActionResult Requests() {
+            return View(Repository.Listings);
+        }
+
         public IActionResult About() {
             ViewData["Message"] = "Your application description page. ";
             return View();
@@ -35,5 +52,31 @@ namespace PartyInvites.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+        [HttpPost]
+        public ViewResult ListingForm(Listing listing) {
+            // TODO: store response from guest
+
+            Repository.AddListing(listing);
+
+            return View("Confirmation");
+
+            // return View("AllEquipment"); 
+            // return View("Thanks", listing);
+
+
+            // Console.WriteLine(listing.Email);
+            // Console.ReadKey(true);
+            // // Debug.WriteLine(listing.Email);
+            // return View();
+        }
+
+        // public ViewResult Listings () {
+        //     return View(Repository.Listings);
+        // }
+
+
     }
 }
+
